@@ -7,20 +7,14 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -55,7 +49,6 @@ Vet Clinic is a database application used to keep track of the various animals v
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
 
 <!-- GETTING STARTED -->
 
@@ -63,9 +56,9 @@ Vet Clinic is a database application used to keep track of the various animals v
 
 This repository includes files with plain SQL that can be used to recreate a database:
 
-> Use schema.sql to create all tables.
-> Use data.sql to populate tables with sample data.
-> Check queries.sql for examples of queries that can be run on a newly created database. Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!
+- Use schema.sql to create all tables.
+- Use data.sql to populate tables with sample data.
+- Check queries.sql for examples of queries that can be run on a newly created database. Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!
 
 ### Prerequisites
 
