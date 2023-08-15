@@ -21,6 +21,7 @@ UPDATE animals SET species='digimon' WHERE name LIKE '%mon';
 SELECT *FROM animals;
 UPDATE animals SET species='pokemon' where species IS NULL;
 SELECT *FROM animals;
+COMMIT;
 
 BEGIN TRANSACTION;
 DELETE FROM animals;
@@ -36,7 +37,7 @@ SELECT *FROM animals;
  COMMIT;
 
  SELECT COUNT(*) FROM animals;
- SELECT COUNT(*) FROM animals WHERE escape_attempts > 0;
+ SELECT COUNT(*) FROM animals WHERE escape_attempts = 0;
  SELECT AVG(weight_kg) FROM animals;
  SELECT neutered, AVG(escape_attempts) FROM animals GROUP BY neutered;
  SELECT species, MAX(weight_kg), MIN(weight_kg) FROM animals GROUP BY species;
