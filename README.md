@@ -83,13 +83,11 @@ Example commands:
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd vet_clinic
+  install Postgres on your Local Computer
 ```
---->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Usage
 
