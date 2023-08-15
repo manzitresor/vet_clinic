@@ -28,8 +28,6 @@ Vet Clinic is a database application used to keep track of the various animals v
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Database
-
 <details>
 <summary>Database</summary>
   <ul>
