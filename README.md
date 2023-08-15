@@ -10,6 +10,8 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -76,6 +78,26 @@ Example commands:
 --->
 
 <!-- AUTHORS -->
+
+### Install
+
+Install this project with:
+
+<!--
+Example command:
+
+```sh
+  cd vet_clinic
+```
+--->
+
+### Usage
+
+To run the project, You need to open your command line and write code which are in the following Files: 
+
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql).
 
 ## 👥 Authors <a name="authors"></a>
 
