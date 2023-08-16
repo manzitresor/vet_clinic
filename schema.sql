@@ -11,3 +11,4 @@ CREATE TABLE animals(
 
 CREATE TABLE owners(id SERIAL  PRIMARY KEY,full_name VARCHAR,age INT);
 CREATE TABLE species(id SERIAL  PRIMARY KEY,name VARCHAR);
+ALTER TABLE animals DROP COLUMN species;
