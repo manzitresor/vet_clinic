@@ -10,4 +10,4 @@ CREATE TABLE animals(
     ALTER TABLE animals ADD species VARCHAR;
 
 CREATE TABLE owners(id SERIAL  PRIMARY KEY,full_name VARCHAR,age INT);
-
+CREATE TABLE species(id SERIAL  PRIMARY KEY,name VARCHAR);
