@@ -52,3 +52,12 @@ SELECT *FROM animals;
  UPDATE animals SET owner_id=(SELECT id FROM owners WHERE full_name='Bob') WHERE name IN('Devimon','Plantmon');
  UPDATE animals SET owner_id=(SELECT id FROM owners WHERE full_name='Melody Pond') WHERE name IN('Charmander','Squirtle','Blossom');
  UPDATE animals SET owner_id=(SELECT id FROM owners WHERE full_name='Dean Winchester') WHERE name IN('Angemon','Boarmon');
+
+
+ SELECT *FROM animals INNER JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name='Melody Pond';
+ SELECT *FROM animals INNER JOIN species ON animals.species_id = species.id WHERE species.name='Pokemon';
+ SELECT owners.full_name,animals.name FROM owners LEFT JOIN animals ON owners.id = animals.owner_id;
+ SELECT species.name,COUNT(animals.id) FROM animals  JOIN species ON animals.species_id = species.id GROUP BY species.name;
+ SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id JOIN species ON animals.species_id = species.id WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
+ SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
+ SELECT owners.full_name FROM animals JOIN owners ON animals.owner_id = owners.id GROUP BY owners.full_name ORDER BY COUNT(animals.id) DESC LIMIT 1;
