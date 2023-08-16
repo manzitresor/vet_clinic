@@ -8,3 +8,6 @@ CREATE TABLE animals(
     weight_kg DECIMAL NOT NULL);
 
     ALTER TABLE animals ADD species VARCHAR;
+
+CREATE TABLE owners(id SERIAL  PRIMARY KEY,full_name VARCHAR,age INT);
+
