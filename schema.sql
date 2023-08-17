@@ -21,3 +21,5 @@ ALTER TABLE animals ADD CONSTRAINT fk_species FOREIGN KEY(species_id) REFERENCES
 
 
 
+
+
