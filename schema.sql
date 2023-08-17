@@ -21,6 +21,7 @@ ALTER TABLE animals ADD CONSTRAINT fk_species FOREIGN KEY(species_id) REFERENCES
 
 CREATE TABLE vets(id SERIAL PRIMARY KEY,name VARCHAR,age INT,date_of_graduation DATE);
 CREATE TABLE specializations(species_id INT,vets_id INT,FOREIGN KEY (species_id) REFERENCES species(id),FOREIGN KEY (vets_id) REFERENCES vets(id));
+CREATE TABLE visits(animals_id INT,vets_id INT,FOREIGN KEY (animals_id) REFERENCES animals(id),FOREIGN KEY(vets_id) REFERENCES vets(id));
 
 
 
