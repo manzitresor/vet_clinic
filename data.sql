@@ -43,6 +43,8 @@ INSERT INTO vets(name,age,date_of_graduation) VALUES('Maisy Smith',26,'2019-01-1
 INSERT INTO vets(name,age,date_of_graduation) VALUES('Stephanie Mendez',64,'1981-05-04');
 INSERT INTO vets(name,age,date_of_graduation) VALUES('Jack Harkness',38,'2008-06-08');
 
+UPDATE vets SET date_of_graduation='2000-04-23' WHERE id=1;
+
 -- Specializations data
 
 INSERT INTO specializations(species_id,vets_id) VALUES(1,1);
