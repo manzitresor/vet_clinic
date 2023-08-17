@@ -36,3 +36,9 @@ INSERT INTO species(name) VALUES('Digimon');
  UPDATE animals SET owner_id=(SELECT id FROM owners WHERE full_name='Melody Pond') WHERE name IN('Charmander','Squirtle','Blossom');
  UPDATE animals SET owner_id=(SELECT id FROM owners WHERE full_name='Dean Winchester') WHERE name IN('Angemon','Boarmon');
 
+-- Vets data
+
+INSERT INTO vets(name,age,date_of_graduation) VALUES('William Tatcher',45,'2020-04-23');
+INSERT INTO vets(name,age,date_of_graduation) VALUES('Maisy Smith',26,'2019-01-17');
+INSERT INTO vets(name,age,date_of_graduation) VALUES('Stephanie Mendez',64,'1981-05-04');
+INSERT INTO vets(name,age,date_of_graduation) VALUES('Jack Harkness',38,'2008-06-08');
