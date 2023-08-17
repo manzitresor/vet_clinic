@@ -57,7 +57,7 @@ SELECT *FROM animals;
 --  JOIN TABLES QUERY
 
 SELECT animals.name FROM visits  JOIN vets ON visits.vets_id = vets.id  JOIN animals ON visits.animals_id = animals.id WHERE vets.name = 'William Tatcher' ORDER BY date DESC LIMIT 1;
-SELECT COUNT(date) FROM visits JOIN vets ON vet_id = vets.id WHERE vets.name = 'Stephanie Mendez';
+SELECT COUNT(date) FROM visits JOIN vets ON vets_id = vets.id WHERE vets.name = 'Stephanie Mendez';
 SELECT vets.name, species.name FROM vets LEFT JOIN specializations ON vets.id = vets_id LEFT JOIN species ON species.id = species_id;
 SELECT animals.name,visits.date FROM visits  JOIN vets ON visits.vets_id = vets.id  JOIN animals ON visits.animals_id = animals.id WHERE vets.name = 'William Tatcher' AND date BETWEEN '2020-04-01' AND '2020-08-30';
 SELECT animals.name FROM visits JOIN animals ON animals_id = animals.id GROUP BY animals.name ORDER BY COUNT(animals.id) DESC LIMIT 1;
